@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be My Valentine 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-dark">
+  <div class="bg"></div>
+  <div class="stars"></div>
+  <div class="hearts"></div>
+
+  <main class="wrap">
+    <!-- Theme Toggle -->
+    <div class="top-actions">
+      <button class="toggle-btn" id="themeBtn" aria-label="Toggle theme">
+        ☀️ Light Mode
+      </button>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card glass hero-card">
+        <div class="hero-left">
+          <div class="pill">💌 A private message from your husband</div>
+
+          <h1 class="title">
+            Hey my love 💖<br />
+            Will you be my Valentine?
+          </h1>
+
+          <p class="desc">
+            I promise unlimited love, unlimited snacks 🍟, and lifetime hugs 🫂✨
+            <br />
+            (Also… the “NO” button is just decoration 😌😂)
+          </p>
+
+          <div class="button-zone glass-soft" id="buttonZone">
+            <button class="btn btn-yes" id="yesBtn">YES 💍✨</button>
+            <button class="btn btn-no" id="noBtn">NO 🙃</button>
+          </div>
+
+          <p class="hint" id="hintText">
+            Try clicking NO… if you can 😈
+          </p>
+
+          <!-- Success -->
+          <div class="success hidden glass-soft" id="successBox">
+            <div class="success-top">
+              <div class="badge">✅ Approved</div>
+              <h2 class="success-title">YAAAAAY!! 😭💖</h2>
+              <p class="success-text" id="successText"></p>
+            </div>
+
+            <div class="love-meter glass-soft">
+              <div class="love-meter-top">
+                <span>Love Meter</span>
+                <span id="meterValue">0%</span>
+              </div>
+              <div class="love-meter-bar">
+                <div class="love-meter-fill" id="meterFill"></div>
+              </div>
+              <p class="love-meter-note">
+                Warning: Extreme happiness + extra cuddles incoming 😌🫂
+              </p>
+            </div>
+
+            <div class="success-actions">
+              <button class="btn small" id="goIdeas">✨ Date Ideas</button>
+              <button class="btn small outline" id="goPhotos">📸 Our Photos</button>
+              <button class="btn small outline" id="goTop">⬆️ Top</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bear Scene -->
+        <div class="hero-right">
+          <div class="scene glass-soft">
+            <div class="speech" id="speechBubble">Click YES 😌💖</div>
+
+            <div class="bears">
+              <!-- Bear 1 -->
+              <div class="bear bear-a">
+                <div class="ear ear-l"></div>
+                <div class="ear ear-r"></div>
+
+                <div class="face">
+                  <div class="eyes">
+                    <span class="eye"></span>
+                    <span class="eye"></span>
+                  </div>
+                  <div class="nose"></div>
+                  <div class="blush blush-l"></div>
+                  <div class="blush blush-r"></div>
+                </div>
+
+                <div class="body">
+                  <div class="belly"></div>
+                </div>
+
+                <div class="hand hand-l"></div>
+                <div class="hand hand-r"></div>
+              </div>
+
+              <!-- Bear 2 -->
+              <div class="bear bear-b">
+                <div class="ear ear-l"></div>
+                <div class="ear ear-r"></div>
+
+                <div class="face">
+                  <div class="eyes">
+                    <span class="eye"></span>
+                    <span class="eye"></span>
+                  </div>
+                  <div class="nose"></div>
+                  <div class="blush blush-l"></div>
+                  <div class="blush blush-r"></div>
+                </div>
+
+                <div class="body">
+                  <div class="belly"></div>
+                </div>
+
+                <div class="hand hand-l"></div>
+                <div class="hand hand-r"></div>
+              </div>
+            </div>
+
+            <div class="floating-icons">
+              <span class="fi fi1">💖</span>
+              <span class="fi fi2">✨</span>
+              <span class="fi fi3">🍓</span>
+              <span class="fi fi4">💌</span>
+            </div>
+          </div>
+
+          <div class="mini-panels">
+            <div class="mini glass-soft">
+              <div class="mini-emoji">🥺</div>
+              <div>
+                <div class="mini-title">Cute Reminder</div>
+                <div class="mini-sub">Your husband is waiting for YES 😭</div>
+              </div>
+            </div>
+
+            <div class="mini glass-soft">
+              <div class="mini-emoji">😎</div>
+              <div>
+                <div class="mini-title">Husband Rule</div>
+                <div class="mini-sub">“NO” is not supported in this relationship 😂</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATE IDEAS -->
+    <section class="section" id="ideasSection">
+      <div class="section-head">
+        <h2 class="section-title">✨ Date Ideas</h2>
+        <p class="section-sub">Romance = handled ✅</p>
+      </div>
+      <div class="grid" id="ideasGrid"></div>
+    </section>
+
+    <!-- REASONS -->
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">💝 Reasons I Love You</h2>
+        <p class="section-sub">Short list… but unlimited love 😭💖</p>
+      </div>
+
+      <div class="reasons">
+        <div class="reason glass-soft">🌸 You’re my peace</div>
+        <div class="reason glass-soft">😂 You make life fun</div>
+        <div class="reason glass-soft">🫶 You support me always</div>
+        <div class="reason glass-soft">✨ You’re my favorite person</div>
+        <div class="reason glass-soft">🍟 Food tastes better with you</div>
+        <div class="reason glass-soft">💖 You feel like home</div>
+      </div>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="section" id="photosSection">
+      <div class="section-head">
+        <h2 class="section-title">📸 Our Photos</h2>
+        <p class="section-sub">
+          Add images in <b>/images</b> folder: <b>photo1.jpg</b> to <b>photo8.jpg</b>
+        </p>
+      </div>
+
+      <div class="photo-wall">
+        <div class="polaroid tilt-1 glass-soft"><img src="images/photo1.png" alt="photo1"><p>My favorite 💖</p></div>
+        <div class="polaroid tilt-2 glass-soft"><img src="images/photo2.jpg" alt="photo2"><p>Forever ✨</p></div>
+        <div class="polaroid tilt-3 glass-soft"><img src="images/photo3.jpg" alt="photo3"><p>Cuties 😭</p></div>
+        <div class="polaroid tilt-4 glass-soft"><img src="images/photo4.jpg" alt="photo4"><p>Us 🫶</p></div>
+        <div class="polaroid tilt-5 glass-soft"><img src="images/photo5.jpg" alt="photo5"><p>Best day</p></div>
+        <div class="polaroid tilt-6 glass-soft"><img src="images/photo6.jpg" alt="photo6"><p>Always</p></div>
+        <div class="polaroid tilt-7 glass-soft"><img src="images/photo7.jpg" alt="photo7"><p>Mine 😌</p></div>
+        <div class="polaroid tilt-8 glass-soft"><img src="images/photo8.jpg" alt="photo8"><p>My peace</p></div>
+      </div>
+
+      <div class="tip glass-soft">
+        💡 Click any photo to zoom ✨
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final">
+      <div class="card glass final-card">
+        <h2 class="final-title">💌 Final Message</h2>
+        <p class="final-text">
+          You’re my Valentine today, tomorrow and forever 💖
+          <br /><br />
+          Now come here… hug loading 🫂✨
+        </p>
+
+        <div class="final-actions">
+          <button class="btn small outline" id="finalTop">⬆️ Back Up</button>
+          <button class="btn small" id="yesAgainBtn">YES AGAIN 😌✅</button>
+        </div>
+      </div>
+
+      <p class="footer">
+        Made with ❤️ by your husband 😌✨
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
